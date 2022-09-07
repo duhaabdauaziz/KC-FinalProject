@@ -1,0 +1,83 @@
+body {
+    background-color:#CCCCFF ;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color:#1F305E ;
+  }
+  
+  .topnav a {
+    float: left;
+    color:#CCCCFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:18px;
+  }
+  
+  .topnav a:hover {
+    background-color:#CCCCFF;
+    color:#1F305E ;
+  }
+  
+  .topnav a.active {
+    background-color: #74aa96;
+    color: white;
+  }
+
+.o {
+    align-items: center;
+    justify-content: space-around;
+    display: inline;
+}
+
+
+  .flip-card {
+    background-color: transparent;
+    width: 200px;
+    height:100px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color:#1F305E ;
+    color: #bbb;
+}
+  
+  .flip-card-back {
+    background-color: #1F305E;;
+    color:#F0F8FF ;
+    transform: rotateY(180deg);
+  }
+  
+
+.droid-arabic-kufi {
+    font-family: 'Droid Arabic Kufi', serif;
+}
+
+.link {
+    display: block;
+}
